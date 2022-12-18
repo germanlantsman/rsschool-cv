@@ -1,21 +1,203 @@
-<!doctype html>
- 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
- 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
- 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
- 
-  <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
- 
+
 <body>
-  <script src="js/scripts.js"></script>
+    <header class="header">
+        <div class="header-container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#Contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#Target" class="nav-link">Target</a></li>
+                    <li class="nav-item"><a href="#About-myself" class="nav-link">About myself</a></li>
+                    <li class="nav-item"><a href="#Software-knowledge" class="nav-link">Software knowledge</a></li>
+                    <li class="nav-item"><a href="#Programming-skills" class="nav-link">Programming skills</a></li>
+                    <li class="nav-item"><a href="#CodeWars-code-sample" class="nav-link">CodeWars</a></li>
+                    <li class="nav-item"><a href="#Courses" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#Work-experience" class="nav-link">Work experience</a></li>
+                    <li class="nav-item"><a href="#Education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#English-level" class="nav-link">English level</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <img class="avatar" src="photo.jpg" alt="my photo">
+            <ul class="name">
+                <li class="first-name">
+                    <h1>German Lantsman</h1>
+                </li>
+                <li class="student">
+                    <h2>Student JS/FE 2022Q4</h2>
+                </li>
+            </ul>
+        </div>
+        <div class="container-information">
+            <div class="information-left">
+                <div class="contact-information" id="Contacts">
+                    <ul class="contact">
+                        <li class="contact-name">
+                            <h2>Contact information</h2>
+                        </li>
+                        <li>Phone: +375 33 35 204 75</li>
+                        <li>Discord: germanlantsman(@germanlantsman)</li>
+                        <li>E-mail: <a class="email" href="mailto:germanlantsman@gmail.com">germanlantsman@gmail.com</a></li>
+                        <li>Adress: Minsk, Shirokaia str., 36</li>
+                    </ul>
+                </div>
+                <div class="contact-information" id="About-myself">
+                    <ul class="contact2">
+                        <li class="contact-name">
+                            <h2>About myself</h2>
+                        </li>
+                        <li>purposeful</li>
+                        <li>esponsible</li>
+                        <li>communicative</li>
+                        <li>easily trained</li>
+                        <li>organizational experience</li>
+                        <li>technical mindset</li>
+                    </ul>
+                </div>
+
+                <div class="contact-information" id="Programming-skills">
+                    <ul class="contact2">
+                        <li class="contact-name">
+                            <h2>Programming skills</h2>
+                        </li>
+                        <li>C#</li>
+                        <li>SQL</li>
+                        <li>Atlassian Jira</li>
+                        <li>Scrum </li>
+                        <li>Waterfall</li>
+                        <li>TestCase</li>
+                        <li>Test report</li>
+                        <li>Compatibility testing</li>
+                        <li>localization testing</li>
+                        <li>Functional testing</li>
+                        <li>Regression testing</li>
+                        <li>Web and Mobile testing</li>
+                    </ul>
+                </div>
+                <div class="contact-information" id="Software-knowledge">
+                    <ul class="contact2">
+                        <li class="contact-name">
+                            <h2>Software knowledge</h2>
+                        </li>
+                        <li>Microsoft Office</li>
+                        <li>CorelDRAW</li>
+                        <li>ANSYS Workbench</li>
+                        <li>Compass 3D</li>
+                        <li>Mathematical modeling</li>
+                    </ul>
+                </div>
+                <div class="contact-information" id="English-level">
+                    <ul class="contact">
+                        <li class="contact-name">
+                            <h2>English level</h2>
+                        </li>
+                        <li>B2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="information-right">
+                <div class="contact-information" id="Target">
+                    <ul class="contact">
+                        <li class="contact-name">
+                            <h2>Target</h2>
+                        </li>
+                        <li>Successfully complete JavaScript/Front-end courses to apply the acquired knowledge and
+                            skills to
+                            work
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-information" id="CodeWars-code-sample">
+                    <ul class="contact">
+                        <li class="contact-name">
+                            <h2>CodeWars code sample</h2>
+                        </li>
+                        <li>
+                            <pre>
+function makeNegative(num) {
+    if (num &lt;= 0) return num;
+    if (num &gt; 0) return -num;
+}</pre>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-information" id="Courses">
+                    <ul class="contact">
+                        <li class="contact-name">
+                            <h2>Completed courses</h2>
+                        </li>
+                        <li>QA Itransition 2013</li>
+                    </ul>
+                </div>
+                <div class="contact-information" id="Projects">
+                    <ul class="contact2">
+                        <li class="contact-name">
+                            <h2>Projects</h2>
+                        </li>
+                        <li>CV1</li>
+                        <li>CV2</li>
+                    </ul>
+                </div>
+                <div class="contact-information" id="Work-experience">
+                    <ul class="contact">
+                        <li class="contact-name">
+                            <h2>Work experience</h2>
+                        </li>
+                        <li>I have experience in creating various levels of test documentation, conducting functional
+                            testing, compatibility testing, localization testing, website testing, preparing product
+                            quality
+                            reports. I have the skills to work with operating systems of the Windows line (I also
+                            completed
+                            the technical task for CentOS). I have experience with virtualization, networks.</li>
+                    </ul>
+                </div>
+
+                <div class="contact-information" id="Education">
+                    <ul class="contact2">
+                        <li class="contact-name">
+                            <h2>Education</h2>
+                        </li>
+                        <li>2015 Belarusian National Technical University, Minsk Information technologies and robotics
+                            (FITR), Information systems and technologies</li>
+                        <li>2017 Belarusian National Technical University, Minsk FITR, System Analysis and Management.
+                            Master’s degree</li>
+                        <li>2020 National Academy of Sciences of Belarus, Minsk. Applied physics, non-destructive
+                            testing.
+                            Postgraduate</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div>2022</div>
+            <div><a href="https://github.com/germanlantsman" target="_blank"><img src="git.png" alt="git" width="140" height="70"></a></div>
+            <div><a href="https://rs.school/js/" target="_blank"><img src="rs2.svg" alt="logoRS" width="150" height="60"></a></div>
+        </div>
+    </footer>
+
+
+
 </body>
+
 </html>

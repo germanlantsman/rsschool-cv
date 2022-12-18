@@ -1,16 +1,210 @@
-html, body {
-    font-family: Arial, serif;
-    font-size: 16px;
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.body {
+    min-height: 100vh;
+    line-height: 1.5em;
     margin: 0;
     padding: 0;
+    display: flex;
+    /* эта и еще 2 строчки снизу прижимают футер к низу страницы*/
+    flex-direction: column;
+    justify-content: space-between;
 }
-table {
-    border-collapse: collapse;
+
+.avatar {
+    width: 250px;
+    height: 250px;
+    margin-left: 75px;
+    /*width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 60%);
+    filter: grayscale(0.2) brightness(1.05);
+    transition: .3s;*/
 }
-table.border td, table.border th {
-    padding: 5px;
-    border: 1px solid #c0c0c0;
+
+.header {
+    position: sticky;
+    z-index: auto;
+    background-color: rgb(98, 145, 98);
 }
-table.border th {
-    background: #e0e0e0;
+
+.main {
+    flex-direction: column;
+    background-color: rgb(172, 198, 172);
+    border-bottom: 3px solid rgb(113, 114, 113);
 }
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    /*padding-top: 10px;*/
+    background-color: rgb(146, 178, 141);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.container-information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid rgb(114, 113, 113);
+}
+
+.information-left {
+    max-width: 50%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.information-right {
+    max-width: 50%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    /* Делает список в строку*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-link {
+    /*Добавляем отступы между элементами списка:*/
+    padding: 0 10px;
+    line-height: 10px;
+    text-decoration: none;
+    color: black;
+    font: italic 20px Arial sans-serif;
+    transition: .3s;
+    /*Чтобы свойства менялись плавно.*/
+}
+
+.nav-link:hover {
+    /*меняем цвет ссылок при наведении*/
+    color: whitesmoke;
+}
+
+
+.email {
+    text-decoration: none;
+    color: seagreen;
+}
+
+.email:hover {
+    /*меняем цвет ссылок при наведении*/
+    color: whitesmoke;
+}
+
+.name {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-name {
+    color: seagreen;
+    font-size: 20px;
+    text-transform: uppercase;
+    list-style: none;
+    text-align: center;
+}
+
+.contact {
+    list-style: none;
+    display: flex;
+    color: black;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.contact2 {
+    list-style: none;
+    display: flex;
+    color: black;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.first-name {
+    color: seagreen;
+    text-transform: capitalize;
+    font: bold 1em Arial;
+}
+
+.student {
+    color: rgb(83, 81, 81);
+}
+
+.footer {
+    margin-bottom: 10px;
+    height: 80px;
+    z-index: auto;
+    background-color: rgb(98, 145, 98);
+    font: bold 20px Arial;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+}
+/*
+.footer-ico-git {
+    width: 140px;
+    height: 70px;
+    background-image: url(git.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer-ico-rs {
+    width: 150px;
+    height: 60px;
+    background-image: url(rs.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}*/
